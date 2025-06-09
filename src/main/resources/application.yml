@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ConfigServer
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wasanabriag37/configServerNuevaEps.git
+          clone-on-start: true
+          default-label: main
+          username: wasanabriag37
+          password: asdsadasdasdasdasdasd
+server:
+  port: 9091
